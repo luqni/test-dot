@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use Illuminate\Database\Capsule\Manager as DB;
+use  DB;
+use Kavist\RajaOngkir\Facades\RajaOngkir;
 
 class CityController extends Controller
 {
@@ -18,15 +19,22 @@ class CityController extends Controller
 
     public function show(Request $request)
     {
+        $getRajaOngkir = false;
         $id = $request->query('id');
+        $getRajaOngkir = $request->query('getRajaOngkir');
 
-        $province =  app('db')->select("SELECT * FROM city where city_id=".$id);
 
-        if ($province) {
+        if($getRajaOngkir){
+            $city = RajaOngkir::kota()->find($id);
+        }else{
+            $city =  DB::select("SELECT city_id, province_id, province, type, city_name, postal_code FROM city where city_id=".$id);
+        }
+
+        if ($city) {
             return response()->json([
                 'success'   => true,
                 'message'   => 'Detail City!',
-                'data'      => $province
+                'data'      => $city
             ], 200);
         } else {
             return response()->json([

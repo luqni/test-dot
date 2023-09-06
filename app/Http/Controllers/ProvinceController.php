@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use Illuminate\Database\Capsule\Manager as DB;
+use Kavist\RajaOngkir\Facades\RajaOngkir;
+use DB;
 
 class ProvinceController extends Controller
 {
@@ -18,9 +19,17 @@ class ProvinceController extends Controller
 
     public function show(Request $request)
     {
+        $getRajaOngkir = false;
         $id = $request->query('id');
+        $getRajaOngkir = $request->query('getRajaOngkir');
 
-        $province =  app('db')->select("SELECT * FROM province where province_id=".$id);
+
+        if($getRajaOngkir){
+            $province =  RajaOngkir::provinsi()->find($id);
+        }else{
+            $provinces =  DB::select("SELECT province_id,province FROM province where province_id=".$id);
+            $province = $provinces[0];
+        }
 
         if ($province) {
             return response()->json([
