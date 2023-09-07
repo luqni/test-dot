@@ -1,4 +1,31 @@
-# Lumen PHP Framework
+# Test Membuat Webservice Consume and Provide data Provinsi dan Kota dari API Raja Ongkir | Sprint 2
+## Cara Install
+1. Clone atau download sourcode di link berikut : https://github.com/luqni/test-dot/tree/sprint_2
+2. Ubah file .env.example menjadi .env
+3. Sesuaikan Konfigurasi Database nya di .env
+4. Lakukan Migrasi Database dengan perintah : php artisan migrate
+5. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_province
+6. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_city
+7. Jalankan Webservice dengan menggunakan perintah : php -S localhost:8000 -t public ( Posisi berada di direktori aplikasi/projek )
+8. Registrasi Akun terlebih dengan API Regsiter, Silahkan buka Postman : http://localhost:8000/register
+
+9. Login untuk mendapatkan token, yang digunakan untuk auth saat fetch data
+
+10. Untuk search data provinsi dari DB silahkan buka Postman : http://localhost:8000/search/provinces?id=1, kemudian masukan token di header
+
+11. Untuk search data provinsi dari API Raja Ongkir silahkan buka Postman : http://localhost:8000/search/provinces?id=1&getRajaOngkir=true, kemudian masukan token di header
+
+12. Untuk search data kota dari DB silahkan buka Postman : http://localhost:8000/search/cities?id=1, kemudian masukan token di header
+
+13. Untuk search data kota dari API Raja Ongkir silahkan buka Postman : http://localhost:8000/search/cities?id=1&getRajaOngkir=true, kemudian masukan token di header
+
+14. Aplikasi ini juga menerapkan Unit Test, untuk menjalankan unit testin silahkan jalankan perintah berikut : ./vendor/bin/phpunit
+
+
+
+
+WebService Menggunakan
+## Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
