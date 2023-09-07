@@ -8,17 +8,17 @@
 6. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_city
 7. Jalankan Webservice dengan menggunakan perintah : php -S localhost:8000 -t public ( Posisi berada di direktori aplikasi/projek )
 8. Registrasi Akun terlebih dengan API Regsiter, Silahkan buka Postman : http://localhost:8000/register
-
+![image.png]( https://github.com/luqni/test-dot/blob/sprint_2/postman_register_sprint_2.png )
 9. Login untuk mendapatkan token, yang digunakan untuk auth saat fetch data
-
+![image.png]( https://github.com/luqni/test-dot/blob/sprint_2/postman_login_sprint_2.png )
 10. Untuk search data provinsi dari DB silahkan buka Postman : http://localhost:8000/search/provinces?id=1, kemudian masukan token di header
-
+![image.png]( https://github.com/luqni/test-dot/blob/sprint_2/postman_fetch_provinsi_db.png )
 11. Untuk search data provinsi dari API Raja Ongkir silahkan buka Postman : http://localhost:8000/search/provinces?id=1&getRajaOngkir=true, kemudian masukan token di header
-
+![image.png]( https://github.com/luqni/test-dot/blob/sprint_2/postman_fetch_provinsi_rajaongkir.png )
 12. Untuk search data kota dari DB silahkan buka Postman : http://localhost:8000/search/cities?id=1, kemudian masukan token di header
-
+![image.png]( https://github.com/luqni/test-dot/blob/sprint_2/postman_fetch_kota_db.png )
 13. Untuk search data kota dari API Raja Ongkir silahkan buka Postman : http://localhost:8000/search/cities?id=1&getRajaOngkir=true, kemudian masukan token di header
-
+![image.png]( https://github.com/luqni/test-dot/blob/sprint_2/postman_fetch_kota_rajaongkir.png )
 14. Aplikasi ini juga menerapkan Unit Test, untuk menjalankan unit testin silahkan jalankan perintah berikut : ./vendor/bin/phpunit
 
 
