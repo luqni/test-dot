@@ -11,7 +11,7 @@
 ![image.png]( https://github.com/luqni/test-dot/blob/sprint_1/postman_provinsi_sprint1.png )
 9. Untuk search data kota silahkan buka Postman : http://localhost:8000/search/cities?id=1
 ![image.png]( https://github.com/luqni/test-dot/blob/sprint_1/search_kota_sprint1.png )
-
+10. Aplikasi ini juga menerapkan Unit Test, untuk menjalankan unit testin silahkan jalankan perintah berikut : ./vendor/bin/phpunit
 
 
 WebService Menggunakan
