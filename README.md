@@ -1,6 +1,6 @@
 # Test Membuat Webservice Consume and Provide data Provinsi dan Kota dari API Raja Ongkir | Sprint 1
 ## Cara Install
-1. Clone atau download sourcode di link berikut : https://github.com/luqni/test-dot/tree/sprint_2
+1. Clone atau download sourcode di link berikut : https://github.com/luqni/test-dot/tree/sprint_1
 2. Ubah file .env.example menjadi .env
 3. Sesuaikan Konfigurasi Database nya di .env
 4. Lakukan Migrasi Database dengan perintah : php artisan migrate
