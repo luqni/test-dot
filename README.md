@@ -2,7 +2,7 @@
 ## Cara Install
 1. Clone atau download sourcode di link berikut : https://github.com/luqni/test-dot/tree/sprint_1
 2. Ubah file .env.example menjadi .env
-3. Sesuaikan Konfigurasi Database nya di .env
+3. Sesuaikan Konfigurasi Database nya di .env -> sudah tersedia API Key Raja Ongkir
 4. Lakukan Migrasi Database dengan perintah : php artisan migrate
 5. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_province
 6. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_city
