@@ -4,14 +4,15 @@
 2. Ubah file .env.example menjadi .env
 3. Sesuaikan Konfigurasi Database nya di .env -> sudah tersedia API Key Raja Ongkir
 4. Lakukan Migrasi Database dengan perintah : php artisan migrate
-5. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_province
-6. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_city
-7. Jalankan Webservice dengan menggunakan perintah : php -S localhost:8000 -t public ( Posisi berada di direktori aplikasi/projek )
-8. Untuk search data provinsi silahkan buka Postman : http://localhost:8000/search/provinces?id=1
+5. Instal package yang dibutuhkan dengan perintah : composer install
+6. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_province
+7. Jalankan perintah CLI artisan untuk fetch dan insert data Provinsi dari API Raja Ongkir ke Database Aplikasi : php artisan save:data_city
+8. Jalankan Webservice dengan menggunakan perintah : php -S localhost:8000 -t public ( Posisi berada di direktori aplikasi/projek )
+9. Untuk search data provinsi silahkan buka Postman : http://localhost:8000/search/provinces?id=1
 ![image.png]( https://github.com/luqni/test-dot/blob/sprint_1/postman_provinsi_sprint1.png )
-9. Untuk search data kota silahkan buka Postman : http://localhost:8000/search/cities?id=1
+10. Untuk search data kota silahkan buka Postman : http://localhost:8000/search/cities?id=1
 ![image.png]( https://github.com/luqni/test-dot/blob/sprint_1/search_kota_sprint1.png )
-10. Aplikasi ini juga menerapkan Unit Test, untuk menjalankan unit testin silahkan jalankan perintah berikut : ./vendor/bin/phpunit
+11. Aplikasi ini juga menerapkan Unit Test, untuk menjalankan unit testin silahkan jalankan perintah berikut : ./vendor/bin/phpunit
 
 
 WebService Menggunakan
